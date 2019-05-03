@@ -35,7 +35,7 @@ public class HomeLocation : MonoBehaviour
         if (Input.location.lastData.latitude != 0 && Input.location.lastData.longitude != 0)
         {
             latitude = Input.location.lastData.latitude;
-            longitude = Input.location.lastData.latitude;
+            longitude = Input.location.lastData.longitude;
 
             text.text = "位置情報の取得が\n終わりました";
         print(Input.location.lastData.latitude+":"+Input.location.lastData.longitude);
@@ -49,7 +49,7 @@ public class HomeLocation : MonoBehaviour
 
     private void Return()
     {
-        SceneManager.LoadScene("MainScene");
+        SceneManager.LoadScene("Samplelelel");
     }
 
 }
