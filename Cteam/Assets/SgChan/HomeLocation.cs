@@ -8,17 +8,6 @@ public class HomeLocation : MonoBehaviour
 {
 
 
-    public static float longitude
-    {
-        get;
-        private set;
-    }
-
-    public static float latitude
-    {
-        get;
-        private set;
-    }
 
     public Text text;
 
@@ -34,8 +23,13 @@ public class HomeLocation : MonoBehaviour
         Input.location.Start();
         if (Input.location.lastData.latitude != 0 && Input.location.lastData.longitude != 0)
         {
-            latitude = Input.location.lastData.latitude;
-            longitude = Input.location.lastData.longitude;
+            var latitude = Input.location.lastData.latitude;
+            Data.homelatitude = latitude;
+            PlayerPrefs.SetFloat("HomeLatitude", latitude);
+            var longitude = Input.location.lastData.longitude;
+            Data.homelongitude = longitude;
+            PlayerPrefs.SetFloat("HomeLongitude", longitude);
+
 
             text.text = "位置情報の取得が\n終わりました";
         print(Input.location.lastData.latitude+":"+Input.location.lastData.longitude);

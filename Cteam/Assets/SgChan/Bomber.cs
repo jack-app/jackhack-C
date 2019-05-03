@@ -23,8 +23,8 @@ public class Bomber : MonoBehaviour
         Input.location.Start();
         if (Input.location.status == LocationServiceStatus.Running&&Input.location.lastData.latitude!=0&&Input.location.lastData.longitude!=0)
         {
-            var homelatitude = HomeLocation.latitude;
-            var homelongitude = HomeLocation.longitude;
+            var homelatitude = Data.homelatitude;
+            var homelongitude = Data.homelongitude;
             var latitude = Input.location.lastData.latitude;
             var longitude = Input.location.lastData.longitude;
             var latitudelength = (latitude - homelatitude)*10000;
