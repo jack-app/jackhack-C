@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/kuroneko/SettingScene.unity
     guid: f95b6367f7d3fcf458cde70226cb8f06
+  - enabled: 1
+    path: Assets/SgChan/LocationDecision.unity
+    guid: b84251bbe7004a348845d88164ab4471
   m_configObjects: {}
