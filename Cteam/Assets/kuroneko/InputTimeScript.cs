@@ -27,21 +27,27 @@ public class InputTimeScript : MonoBehaviour
     public void InputHour()
     {
         Int32.TryParse(inputHour.text, out UpHour);
+        PlayerPrefs.SetInt("UpHour", UpHour);
         //Debug.Log(UpHour);
+
+        //ここからもデータをstticにあげる
     }
     public void InputMinutes()
     {
         Int32.TryParse(inputMinutes.text, out UpMinute);
+        PlayerPrefs.SetInt("UpMinute", UpMinute);
         //Debug.Log(UpMinute);
     }
     public void InputHour2()
     {
         Int32.TryParse(inputHour2.text, out OutHour);
+        PlayerPrefs.SetInt("OutHour", OutHour);
         //Debug.Log(OutHour);
     }
     public void InputMinutes2()
     {
         Int32.TryParse(inputMinutes2.text, out OutMinute);
+        PlayerPrefs.SetInt("OutMinute", OutMinute);
         //Debug.Log(OutMinute);
     }
 }
