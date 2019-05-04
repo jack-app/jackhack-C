@@ -37,6 +37,7 @@ public class Testtest : MonoBehaviour
         {
             // 3秒間遊ばれていなかったら通知を出す
             SetNotification("Play the game!!",  3);
+            SetNotification("Play the game!!", 10);
         }
         else
         {

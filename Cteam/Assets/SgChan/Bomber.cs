@@ -39,7 +39,6 @@ public class Bomber : MonoBehaviour
             // print(latitude + ":" + longitude+":"+homelatitude+":"+homelongitude);
             if (direction > 20)
             {
-                Data.alarmdate = 0;
                 SceneManager.LoadScene("MainScene");
             }
         }
