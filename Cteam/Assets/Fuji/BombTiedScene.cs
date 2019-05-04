@@ -48,6 +48,7 @@ public class BombTiedScene : MonoBehaviour
             {
                 if (Now > Getup)
                 {
+                    print("a");
                     SceneManager.LoadScene("BombTiedScene");
                 }
             }

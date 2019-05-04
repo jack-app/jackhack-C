@@ -15,4 +15,9 @@ public class Reset : MonoBehaviour
     {
         
     }
+
+    public void DataReset()
+    {
+        PlayerPrefs.DeleteAll();
+    }
 }
