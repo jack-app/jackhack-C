@@ -303,7 +303,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4db9168c896e1b4fbdf29ceaf20e87c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  judgedistance: 8
+  judgedistance: 20
 --- !u!1 &338423129
 GameObject:
   m_ObjectHideFlags: 0
@@ -833,6 +833,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: DoG
       objectReference: {fileID: 0}
+    - target: {fileID: -6057140222963153312, guid: 999ac88bfcbc3f840bf559be9e7c10a7,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: c5268d769046a2140b61e95ec75cadba, type: 2}
     - target: {fileID: -4216859302048453862, guid: 999ac88bfcbc3f840bf559be9e7c10a7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -903,11 +908,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 3.2637527
       objectReference: {fileID: 0}
-    - target: {fileID: -6057140222963153312, guid: 999ac88bfcbc3f840bf559be9e7c10a7,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: c5268d769046a2140b61e95ec75cadba, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 999ac88bfcbc3f840bf559be9e7c10a7, type: 3}
 --- !u!1 &1559170046
