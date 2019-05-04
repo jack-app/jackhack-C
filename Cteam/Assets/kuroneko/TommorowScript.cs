@@ -21,7 +21,7 @@ public class TommorowScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void OnClick()
@@ -39,8 +39,9 @@ public class TommorowScript : MonoBehaviour
             Data.getouttime = new System.DateTime(now.Year, now.Month, now.Day, getout.Hour, getout.Minute, getout.Second);
             if (now.Hour >= getout.Hour)
             {
-                Data.getuptime.AddDays(1);
-                Data.getouttime.AddDays(1);
+                Data.getuptime = Data.getuptime.AddDays(1);
+                Data.getouttime = Data.getouttime.AddDays(1);
+                print(Data.getouttime);
 
             }
         }
