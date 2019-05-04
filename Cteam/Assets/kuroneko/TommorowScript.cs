@@ -6,13 +6,14 @@ using UnityEngine.UI;
 public class TommorowScript : MonoBehaviour
 {
     Button btn;
-    //翌日爆弾設定するならflagは1
-    public static int flag;
+    
     // Start is called before the first frame update
     void Start()
     {
         btn = GameObject.Find("TommorowButton").GetComponent<Button>();
-        flag = 0;
+        if (Data.alarm)
+            btn.image.color = Color.blue;
+       
     }
 
     // Update is called once per frame
@@ -23,6 +24,12 @@ public class TommorowScript : MonoBehaviour
 
     public void OnClick()
     {
-        
+        Data.alarm = !Data.alarm;
+        if (Data.alarm)
+            btn.image.color = Color.blue;
+        else
+            btn.image.color = Color.white;
+        Debug.Log(Data.alarm);
+        PlayerPrefs.SetInt("Alarm", Data.alarm ? 1 : 0);
     }
 }

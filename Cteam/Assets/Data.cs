@@ -20,7 +20,7 @@ public class Data : MonoBehaviour
 
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         homelatitude = PlayerPrefs.GetFloat("HomeLatitude");
         homelongitude = PlayerPrefs.GetFloat("HomeLongitude");
@@ -30,6 +30,7 @@ public class Data : MonoBehaviour
         getouttime = System.DateTime.FromBinary(System.Convert.ToInt64(PlayerPrefs.GetString("GetOutTime", defalt)));
 
         alarm = 1 == PlayerPrefs.GetInt("Alarm");
+        print(alarm);
         print(getouttime);
     }
 
