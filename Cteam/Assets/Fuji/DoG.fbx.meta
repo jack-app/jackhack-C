@@ -12,7 +12,13 @@ ModelImporter:
   - first:
       74: -8458734719146967884
     second: Armature|TiedUp
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dog_Tex
+    second: {fileID: 4540289516839129882, guid: 999ac88bfcbc3f840bf559be9e7c10a7,
+      type: 3}
   materials:
     importMaterials: 1
     materialName: 0
