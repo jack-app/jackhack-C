@@ -21,6 +21,11 @@ EditorBuildSettings:
     path: Assets/Fuji/BombTiedScene.unity
     guid: 85b6195c510ba6c489d7359e746d7afd
   - enabled: 1
+<<<<<<< HEAD
+    path: Assets/kuroneko/NameScene.unity
+    guid: 5a9fec42020272f4dabf21a85ce26fda
+=======
     path: Assets/DoraDora/Succeed.unity
     guid: b1da1bc2d807b3d45bcf444ccd3bc881
+>>>>>>> 6172a630392d11e61c01471f55e09b550ab0db30
   m_configObjects: {}
