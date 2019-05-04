@@ -28,6 +28,8 @@ public class Data : MonoBehaviour
         string defalt= new DateTime(2019, 1, 1, 0, 0, 0, DateTimeKind.Local).ToBinary().ToString();//保存していたデータが存在しない時用のデフォルト値
         getuptime = System.DateTime.FromBinary(System.Convert.ToInt64(PlayerPrefs.GetString("GetUpTime", defalt)));
         getouttime = System.DateTime.FromBinary(System.Convert.ToInt64(PlayerPrefs.GetString("GetOutTime", defalt)));
+
+        alarm = 1 == PlayerPrefs.GetInt("Alarm");
         print(getouttime);
     }
 
