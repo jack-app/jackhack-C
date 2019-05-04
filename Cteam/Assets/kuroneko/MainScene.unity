@@ -1892,40 +1892,20 @@ PrefabInstance:
       propertyPath: m_LocalRotation.w
       value: 0.67160434
       objectReference: {fileID: 0}
-<<<<<<< HEAD
-    - target: {fileID: 2920781966812209391, guid: 2b44eca503077d0408ed95423f7b72c8,
-        type: 3}
-      propertyPath: m_ReflectionProbeUsage
-=======
     - target: {fileID: 2920781966490499581, guid: 2b44eca503077d0408ed95423f7b72c8,
         type: 3}
       propertyPath: m_Enabled
->>>>>>> b74460b27bf47f8d72f8ca4f193de772191cfd2a
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2920781966812209391, guid: 2b44eca503077d0408ed95423f7b72c8,
         type: 3}
-<<<<<<< HEAD
-      propertyPath: m_LightProbeUsage
-      value: 0
-=======
       propertyPath: m_ReceiveShadows
       value: 1
->>>>>>> b74460b27bf47f8d72f8ca4f193de772191cfd2a
       objectReference: {fileID: 0}
     - target: {fileID: 2920781966812209391, guid: 2b44eca503077d0408ed95423f7b72c8,
         type: 3}
       propertyPath: m_CastShadows
-<<<<<<< HEAD
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2920781966812209391, guid: 2b44eca503077d0408ed95423f7b72c8,
-        type: 3}
-      propertyPath: m_ReceiveShadows
-      value: 0
-=======
       value: 1
->>>>>>> b74460b27bf47f8d72f8ca4f193de772191cfd2a
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b44eca503077d0408ed95423f7b72c8, type: 3}
