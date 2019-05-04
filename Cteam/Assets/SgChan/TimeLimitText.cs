@@ -16,7 +16,7 @@ public class TimeLimitText : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        var limit = System.DateTime.Now - bombtime;
+        var limit = bombtime-System.DateTime.Now;
         timelimit.text = "爆破まで" + limit.Hours + ":" + limit.Minutes + ":" + limit.Seconds;
     }
 }
