@@ -19,7 +19,9 @@ public class Reset : MonoBehaviour
 
     public void DataReset()
     {
-        PlayerPrefs.DeleteAll();
+        PlayerPrefs.DeleteKey("GetUpTime");
+        PlayerPrefs.DeleteKey("GetOutTime");
         SceneManager.LoadScene("MainScene");
+
     }
 }

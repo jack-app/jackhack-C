@@ -15,6 +15,15 @@ public class GetOutScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        text.text = "外出時刻は　" + Data.getouttime.Hour + ":" + Data.getouttime.Minute + "　です";
+        string minute;
+        if (Data.getouttime.Minute < 10)
+        {
+            minute = "0"+Data.getouttime.Minute;
+        }
+        else
+        {
+            minute= ""+ Data.getouttime.Minute;
+        }
+        text.text = "外出時刻は " + Data.getouttime.Hour + ":" + minute + " です";
     }
 }
