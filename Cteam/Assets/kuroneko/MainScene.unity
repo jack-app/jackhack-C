@@ -263,6 +263,7 @@ GameObject:
   - component: {fileID: 522822310}
   - component: {fileID: 522822309}
   - component: {fileID: 522822308}
+  - component: {fileID: 522822311}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -335,6 +336,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &522822311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 522822307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 138931a223be0e647a8775205f17d6c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camera: {fileID: 522822309}
 --- !u!1 &623453997
 GameObject:
   m_ObjectHideFlags: 0
@@ -935,7 +949,6 @@ GameObject:
   - component: {fileID: 1900838775}
   - component: {fileID: 1900838774}
   - component: {fileID: 1900838778}
-  - component: {fileID: 1900838779}
   - component: {fileID: 1900838780}
   - component: {fileID: 1900838781}
   m_Layer: 0
@@ -1017,19 +1030,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80e7749b48f6d08478fc0c3e5f5e1444, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1900838779
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1900838773}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4db9168c896e1b4fbdf29ceaf20e87c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  judgedistance: 0
 --- !u!114 &1900838780
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1054,6 +1054,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 936b61a0283418f409b4b83cffc7c2a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1910811467 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2920781966490499580, guid: 2b44eca503077d0408ed95423f7b72c8,
+    type: 3}
+  m_PrefabInstance: {fileID: 2920781965800262208}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1910811471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1910811467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12566dd6e641bc444bcbf5bb02ef28e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1910811472
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1910811467}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0393467, y: 2.0068076, z: 2.8993485}
+  m_Center: {x: -0.0039346023, y: 0.9910766, z: 0.09763409}
 --- !u!1001 &2920781965800262208
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1065,6 +1096,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DoG
+      objectReference: {fileID: 0}
+    - target: {fileID: 2920781966490499580, guid: 2b44eca503077d0408ed95423f7b72c8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Dog
       objectReference: {fileID: 0}
     - target: {fileID: 2920781966490499583, guid: 2b44eca503077d0408ed95423f7b72c8,
         type: 3}
@@ -1856,25 +1892,40 @@ PrefabInstance:
       propertyPath: m_LocalRotation.w
       value: 0.67160434
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 2920781966812209391, guid: 2b44eca503077d0408ed95423f7b72c8,
         type: 3}
       propertyPath: m_ReflectionProbeUsage
+=======
+    - target: {fileID: 2920781966490499581, guid: 2b44eca503077d0408ed95423f7b72c8,
+        type: 3}
+      propertyPath: m_Enabled
+>>>>>>> b74460b27bf47f8d72f8ca4f193de772191cfd2a
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2920781966812209391, guid: 2b44eca503077d0408ed95423f7b72c8,
         type: 3}
+<<<<<<< HEAD
       propertyPath: m_LightProbeUsage
       value: 0
+=======
+      propertyPath: m_ReceiveShadows
+      value: 1
+>>>>>>> b74460b27bf47f8d72f8ca4f193de772191cfd2a
       objectReference: {fileID: 0}
     - target: {fileID: 2920781966812209391, guid: 2b44eca503077d0408ed95423f7b72c8,
         type: 3}
       propertyPath: m_CastShadows
+<<<<<<< HEAD
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2920781966812209391, guid: 2b44eca503077d0408ed95423f7b72c8,
         type: 3}
       propertyPath: m_ReceiveShadows
       value: 0
+=======
+      value: 1
+>>>>>>> b74460b27bf47f8d72f8ca4f193de772191cfd2a
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b44eca503077d0408ed95423f7b72c8, type: 3}
