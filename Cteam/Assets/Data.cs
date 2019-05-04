@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class Data : MonoBehaviour
 {
@@ -8,14 +9,15 @@ public class Data : MonoBehaviour
     public static float homelatitude;
     public static float homelongitude;
     //起きる時間、分
-    public static int getuphour;
-    public static int getupminute;
+    public static DateTime getuptime;
+    public static DateTime getouttime;
+
     //家を出る時間、分
     public static int goouthour;
     public static int gooutminute;
     //次にアラームが鳴る日
     public static int alarmdate;
-
+    
 
 
     // Start is called before the first frame update
