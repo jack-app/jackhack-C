@@ -6,24 +6,24 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/SgChan/Samplelelel.unity
-    guid: 3e6cc12207d34ac4994f2ed4430ef557
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/kuroneko/MainScene.unity
+    guid: 5a43429fbbd170e4989f732d6acec01a
   - enabled: 1
     path: Assets/DoraDora/Dead.unity
     guid: c8584e270cee04311b91c4454c52acb1
   - enabled: 1
-    path: Assets/kuroneko/MainScene.unity
-    guid: 5a43429fbbd170e4989f732d6acec01a
+    path: Assets/DoraDora/Succeed.unity
+    guid: b1da1bc2d807b3d45bcf444ccd3bc881
+  - enabled: 1
+    path: Assets/Fuji/BombTiedScene.unity
+    guid: 85b6195c510ba6c489d7359e746d7afd
+  - enabled: 1
+    path: Assets/kuroneko/NameScene.unity
+    guid: 5a9fec42020272f4dabf21a85ce26fda
   - enabled: 1
     path: Assets/kuroneko/SettingScene.unity
     guid: f95b6367f7d3fcf458cde70226cb8f06
   - enabled: 1
     path: Assets/SgChan/LocationDecision.unity
     guid: b84251bbe7004a348845d88164ab4471
-  - enabled: 1
-    path: Assets/Fuji/BombTiedScene.unity
-    guid: 85b6195c510ba6c489d7359e746d7afd
   m_configObjects: {}

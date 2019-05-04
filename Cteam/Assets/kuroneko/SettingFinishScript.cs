@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class SettingFinishScript : MonoBehaviour
 {
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -20,5 +21,10 @@ public class SettingFinishScript : MonoBehaviour
     public void OnClick()
     {
         SceneManager.LoadScene("MainScene");
+    }
+
+    public void NameClick()
+    {
+        SceneManager.LoadScene("NameScene");
     }
 }

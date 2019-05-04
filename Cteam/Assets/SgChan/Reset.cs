@@ -21,6 +21,8 @@ public class Reset : MonoBehaviour
     {
         PlayerPrefs.DeleteKey("GetUpTime");
         PlayerPrefs.DeleteKey("GetOutTime");
+        PlayerPrefs.DeleteKey("DogName");
+        PlayerPrefs.DeleteKey("GetUpDays");
         SceneManager.LoadScene("MainScene");
 
     }

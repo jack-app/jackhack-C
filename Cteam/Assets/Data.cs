@@ -5,6 +5,7 @@ using System;
 
 public class Data : MonoBehaviour
 {
+    public static int getupdays;
 
     public  static bool alarm;
     //家の緯度経度
@@ -16,6 +17,7 @@ public class Data : MonoBehaviour
     //家を出る時間、分
     public static DateTime getouttime;
 
+    public static string dogname;
     
 
 
@@ -24,7 +26,8 @@ public class Data : MonoBehaviour
     {
         homelatitude = PlayerPrefs.GetFloat("HomeLatitude");
         homelongitude = PlayerPrefs.GetFloat("HomeLongitude");
-
+        getupdays = PlayerPrefs.GetInt("GetUpDays", 0);
+        dogname = PlayerPrefs.GetString("DogName");
         string defalt= new DateTime(3000, 1, 1, 0, 0, 59, DateTimeKind.Local).ToBinary().ToString();//保存していたデータが存在しない時用のデフォルト値
         getuptime = System.DateTime.FromBinary(System.Convert.ToInt64(PlayerPrefs.GetString("GetUpTime", defalt)));
         getouttime = System.DateTime.FromBinary(System.Convert.ToInt64(PlayerPrefs.GetString("GetOutTime", defalt)));

@@ -1,9 +1,11 @@
 ﻿<Properties StartupConfiguration="{DA75608C-4BCB-F4B5-57BB-9DDC2660B189}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Data.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/kuroneko/NameScript.cs">
     <Files>
       <File FileName="Assets/kuroneko/SettingFinishScript.cs" Line="1" Column="1" />
       <File FileName="Assets/kuroneko/SettingScript.cs" Line="1" Column="1" />
       <File FileName="Assets/Data.cs" Line="1" Column="1" />
+      <File FileName="Assets/DoraDora/星　透過.jpg.meta" Line="18" Column="6" />
+      <File FileName="Assets/kuroneko/NameScript.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
