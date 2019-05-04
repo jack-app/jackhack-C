@@ -7,7 +7,7 @@ public class Bomber : MonoBehaviour
 {
 
 
-
+    public int judgedistance;
     // Start is called before the first frame update
     void Start()
     {
@@ -37,9 +37,9 @@ public class Bomber : MonoBehaviour
             var direction = latitudelength * latitudelength + longitudelength*longitudelength;
             print(direction);
             // print(latitude + ":" + longitude+":"+homelatitude+":"+homelongitude);
-            if (direction > 50)
+            if (direction > judgedistance)
             {
-                
+                Data.alarm = false;
                 SceneManager.LoadScene("SettingScene");
             }
         }

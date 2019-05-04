@@ -6,7 +6,7 @@ using System;
 public class Data : MonoBehaviour
 {
 
-    static bool alarm;
+    public  static bool alarm;
     //家の緯度経度
     public static float homelatitude;
     public static float homelongitude;
