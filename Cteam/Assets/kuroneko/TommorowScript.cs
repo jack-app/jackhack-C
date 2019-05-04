@@ -31,6 +31,18 @@ public class TommorowScript : MonoBehaviour
         {
             btn.image.color = btnColor;
             btn.GetComponentInChildren<Text>().text = "アラーム設定中";
+            var getup = Data.getuptime;
+            var getout = Data.getouttime;
+            var now = System.DateTime.Now;
+
+            Data.getuptime = new System.DateTime(now.Year, now.Month, now.Day, getup.Hour, getup.Minute, getup.Second);
+            Data.getouttime = new System.DateTime(now.Year, now.Month, now.Day, getup.Hour, getup.Minute, getup.Second);
+            if (now.Hour >= getout.Hour)
+            {
+                Data.getuptime.AddDays(1);
+                Data.getouttime.AddDays(1);
+
+            }
         }
         else
         {
