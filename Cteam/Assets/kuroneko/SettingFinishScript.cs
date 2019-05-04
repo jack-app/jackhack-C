@@ -21,4 +21,9 @@ public class SettingFinishScript : MonoBehaviour
     {
         SceneManager.LoadScene("MainScene");
     }
+
+    public void NameClick()
+    {
+        SceneManager.LoadScene("NameScene");
+    }
 }

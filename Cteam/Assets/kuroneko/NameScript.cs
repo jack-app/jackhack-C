@@ -12,6 +12,7 @@ public class NameScript : MonoBehaviour
     void Start()
     {
         nameField = GameObject.Find("nameField").GetComponent<InputField>();
+        nameField.text = Data.dogname;
     }
 
     // Update is called once per frame
