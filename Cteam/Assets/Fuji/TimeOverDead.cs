@@ -9,6 +9,18 @@ public class TimeOverDead : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //1秒に一回時間を確認する
+        InvokeRepeating("TimeCheck", 0, 1);
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+
+    void TimeCheck()
+    {
         DateTime TimeLimit = Data.getouttime;
         DateTime NowTime = DateTime.Now;
         switch (TimeLimit.CompareTo(NowTime))
@@ -17,11 +29,5 @@ public class TimeOverDead : MonoBehaviour
                 Debug.Log("DeadScene");
                 break;
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
