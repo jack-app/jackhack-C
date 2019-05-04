@@ -47,7 +47,7 @@ public class TommorowScript : MonoBehaviour
         else
         {
             btn.image.color = Color.white;
-            btn.GetComponentInChildren<Text>().text = "アラーム設定";
+            btn.GetComponentInChildren<Text>().text = "アラーム解除中";
         }
         //Debug.Log(Data.alarm);
         PlayerPrefs.SetString("GetUpTime", Data.getuptime.ToBinary().ToString());
