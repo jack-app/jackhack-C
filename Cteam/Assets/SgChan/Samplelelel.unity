@@ -132,6 +132,10 @@ GameObject:
   - component: {fileID: 731334794}
   - component: {fileID: 731334793}
   - component: {fileID: 731334796}
+  - component: {fileID: 731334797}
+  - component: {fileID: 731334798}
+  - component: {fileID: 731334799}
+  - component: {fileID: 731334800}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -211,8 +215,56 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 731334792}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 77466dc1be8da2d48aab0d2c36ff7db4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &731334797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 731334792}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 009f11fe8af0a8a4ba23d5dd35dfa0ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &731334798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 731334792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a5a8d2db5971bc42b0c8ed4d02a4d23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &731334799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 731334792}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a4de52a67c5a98488a6a78a6dbe2a71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &731334800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 731334792}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4db9168c896e1b4fbdf29ceaf20e87c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
