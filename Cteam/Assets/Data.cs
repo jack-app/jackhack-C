@@ -13,8 +13,7 @@ public class Data : MonoBehaviour
     public static DateTime getouttime;
 
     //家を出る時間、分
-    public static int goouthour;
-    public static int gooutminute;
+
     //次にアラームが鳴る日
     public static int alarmdate;
     
@@ -25,12 +24,12 @@ public class Data : MonoBehaviour
     {
         homelatitude = PlayerPrefs.GetFloat("HomeLatitude");
         homelongitude = PlayerPrefs.GetFloat("HomeLongitude");
-        getuphour = PlayerPrefs.GetInt("UpHour");
-        getupminute = PlayerPrefs.GetInt("UpMinute");
-        goouthour = PlayerPrefs.GetInt("OutHour");
-        gooutminute = PlayerPrefs.GetInt("OutMinute");
+
+        string defalt= new DateTime(0, 0, 0, 0, 0, 0, DateTimeKind.Local).ToBinary().ToString();//保存していたデータが存在しない時用のデフォルト値
+        getuptime = System.DateTime.FromBinary(System.Convert.ToInt64(PlayerPrefs.GetString("GetUpTime", defalt)));
+        getouttime = System.DateTime.FromBinary(System.Convert.ToInt64(PlayerPrefs.GetString("GetOutTime", defalt)));
         alarmdate = PlayerPrefs.GetInt("AlarmDate");
-        print(getuphour);
+
     }
 
     // Update is called once per frame
