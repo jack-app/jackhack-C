@@ -17,8 +17,7 @@ public class BombTiedScene : MonoBehaviour
 
 
         
-            Getup = Data.getuptime;
-            Departure = Data.getouttime;
+           
             TimeCheck();
             //1秒に1回時間を確認
             InvokeRepeating("TimeCheck", 1, 1);
@@ -36,8 +35,11 @@ public class BombTiedScene : MonoBehaviour
 
     void TimeCheck()
     {
+        Getup = Data.getuptime;
+        Departure = Data.getouttime;
         if (Data.alarm)
         {
+            print(Departure);
             DateTime Now = DateTime.Now;
             //時間を過ぎてたら
             if (Now > Departure)
