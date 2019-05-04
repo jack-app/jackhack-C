@@ -40,7 +40,7 @@ public class Bomber : MonoBehaviour
             if (direction > judgedistance)
             {
                 Data.alarm = false;
-
+                PlayerPrefs.SetInt("Alarm",0);
                 SceneManager.LoadScene("MainScene");
             }
         }
