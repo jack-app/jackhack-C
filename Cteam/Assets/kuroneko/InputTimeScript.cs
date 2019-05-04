@@ -17,6 +17,10 @@ public class InputTimeScript : MonoBehaviour
         inputMinutes = GameObject.Find("InputMinutes").GetComponent<InputField>();
         inputHour2 = GameObject.Find("InputHour2").GetComponent<InputField>();
         inputMinutes2 = GameObject.Find("InputMinutes2").GetComponent<InputField>();
+        inputHour.text= Data.getuptime.Hour.ToString();
+        inputMinutes.text = Data.getuptime.Minute.ToString();
+        inputHour2.text = Data.getouttime.Hour.ToString();
+        inputMinutes2.text = Data.getuptime.Minute.ToString();
     }
 
     // Update is called once per frame
