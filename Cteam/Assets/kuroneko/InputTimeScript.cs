@@ -20,7 +20,7 @@ public class InputTimeScript : MonoBehaviour
         inputHour.text= Data.getuptime.Hour.ToString();
         inputMinutes.text = Data.getuptime.Minute.ToString();
         inputHour2.text = Data.getouttime.Hour.ToString();
-        inputMinutes2.text = Data.getuptime.Minute.ToString();
+        inputMinutes2.text = Data.getouttime.Minute.ToString();
     }
 
     // Update is called once per frame
