@@ -32,15 +32,15 @@ public class Bomber : MonoBehaviour
             var longitude = Input.location.lastData.longitude;
             var latitudelength = (latitude - homelatitude) * 10000;
             var longitudelength = (longitude - homelongitude) * 10000;
-            print(latitudelength + ":" + longitudelength);
+            //print(latitudelength + ":" + longitudelength);
 
-            var direction = latitude * latitude + longitude * longitude;
-
+            var direction = latitudelength * latitudelength + longitudelength*longitudelength;
+            print(direction);
             // print(latitude + ":" + longitude+":"+homelatitude+":"+homelongitude);
-            if (direction > 20)
+            if (direction > 50)
             {
                 
-                SceneManager.LoadScene("MainScene");
+                SceneManager.LoadScene("SettingScene");
             }
         }
     }

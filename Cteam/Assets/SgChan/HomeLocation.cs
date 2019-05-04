@@ -43,7 +43,7 @@ public class HomeLocation : MonoBehaviour
 
     private void Return()
     {
-        SceneManager.LoadScene("Samplelelel");
+        SceneManager.LoadScene("SettingScene");
     }
 
 }

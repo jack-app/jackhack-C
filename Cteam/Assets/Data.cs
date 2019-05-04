@@ -25,7 +25,7 @@ public class Data : MonoBehaviour
         homelatitude = PlayerPrefs.GetFloat("HomeLatitude");
         homelongitude = PlayerPrefs.GetFloat("HomeLongitude");
 
-        string defalt= new DateTime(0, 0, 0, 0, 0, 0, DateTimeKind.Local).ToBinary().ToString();//保存していたデータが存在しない時用のデフォルト値
+        string defalt= new DateTime(2019, 1, 1, 0, 0, 0, DateTimeKind.Local).ToBinary().ToString();//保存していたデータが存在しない時用のデフォルト値
         getuptime = System.DateTime.FromBinary(System.Convert.ToInt64(PlayerPrefs.GetString("GetUpTime", defalt)));
         getouttime = System.DateTime.FromBinary(System.Convert.ToInt64(PlayerPrefs.GetString("GetOutTime", defalt)));
         print(getouttime);
