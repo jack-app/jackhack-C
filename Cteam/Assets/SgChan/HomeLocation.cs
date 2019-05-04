@@ -14,7 +14,7 @@ public class HomeLocation : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        Invoke("Failed", 6);
     }
 
     // Update is called once per frame
@@ -46,4 +46,9 @@ public class HomeLocation : MonoBehaviour
         SceneManager.LoadScene("SettingScene");
     }
 
+    void Failed()
+    {
+        text.text = "情報を取得できませんでした";
+        Invoke("Return", 2);
+    }
 }
