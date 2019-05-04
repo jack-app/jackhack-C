@@ -43,7 +43,7 @@ public class Bomber : MonoBehaviour
                 PlayerPrefs.SetInt("Alarm",0);
                 Data.getupdays += 1;
                 PlayerPrefs.SetInt("GetUpDays", Data.getupdays);
-                SceneManager.LoadScene("MainScene");
+                SceneManager.LoadScene("Succeed");
             }
         }
     }
