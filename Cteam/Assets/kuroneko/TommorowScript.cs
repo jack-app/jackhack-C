@@ -36,7 +36,7 @@ public class TommorowScript : MonoBehaviour
             var now = System.DateTime.Now;
 
             Data.getuptime = new System.DateTime(now.Year, now.Month, now.Day, getup.Hour, getup.Minute, getup.Second);
-            Data.getouttime = new System.DateTime(now.Year, now.Month, now.Day, getup.Hour, getup.Minute, getup.Second);
+            Data.getouttime = new System.DateTime(now.Year, now.Month, now.Day, getout.Hour, getout.Minute, getout.Second);
             if (now.Hour >= getout.Hour)
             {
                 Data.getuptime.AddDays(1);
@@ -50,6 +50,8 @@ public class TommorowScript : MonoBehaviour
             btn.GetComponentInChildren<Text>().text = "アラーム設定";
         }
         //Debug.Log(Data.alarm);
+        PlayerPrefs.SetString("GetUpTime", Data.getuptime.ToBinary().ToString());
+        PlayerPrefs.SetString("GetOutTime", Data.getouttime.ToBinary().ToString());
         PlayerPrefs.SetInt("Alarm", Data.alarm ? 1 : 0);
     }
 }

@@ -31,6 +31,7 @@ public class Data : MonoBehaviour
 
         alarm = 1 == PlayerPrefs.GetInt("Alarm");
         print(alarm);
+        print(getuptime);
         print(getouttime);
     }
 
