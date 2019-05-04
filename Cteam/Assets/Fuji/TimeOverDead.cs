@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.SceneManagement;
 
 public class TimeOverDead : MonoBehaviour
 {
@@ -23,10 +24,11 @@ public class TimeOverDead : MonoBehaviour
     {
         DateTime TimeLimit = Data.getouttime;
         DateTime NowTime = DateTime.Now;
+
         switch (TimeLimit.CompareTo(NowTime))
         {
             case -1:
-                Debug.Log("DeadScene");
+                SceneManager.LoadScene("Dead"); 
                 break;
         }
     }
