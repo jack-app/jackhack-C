@@ -17,8 +17,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Dog_Tex
-    second: {fileID: 4540289516839129882, guid: 999ac88bfcbc3f840bf559be9e7c10a7,
-      type: 3}
+    second: {fileID: 2100000, guid: 67315179b01bdca48874bc7d3a487afe, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
