@@ -303,7 +303,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4db9168c896e1b4fbdf29ceaf20e87c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  judgedistance: 20
+  judgedistance: 65
   slider: {fileID: 1907858592}
 --- !u!1 &338423129
 GameObject:
@@ -553,6 +553,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 488054727}
+  speed: 1.4
 --- !u!114 &488054727
 MonoBehaviour:
   m_ObjectHideFlags: 0
