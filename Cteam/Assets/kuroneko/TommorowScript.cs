@@ -37,7 +37,7 @@ public class TommorowScript : MonoBehaviour
 
             Data.getuptime = new System.DateTime(now.Year, now.Month, now.Day, getup.Hour, getup.Minute, getup.Second);
             Data.getouttime = new System.DateTime(now.Year, now.Month, now.Day, getout.Hour, getout.Minute, getout.Second);
-            if (now.Hour >= getout.Hour)
+            if (now >= getout)
             {
                 Data.getuptime = Data.getuptime.AddDays(1);
                 Data.getouttime = Data.getouttime.AddDays(1);
