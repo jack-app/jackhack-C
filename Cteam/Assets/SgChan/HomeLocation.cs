@@ -20,7 +20,11 @@ public class HomeLocation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Input.location.Start();
+        if (Input.location.status != LocationServiceStatus.Running)
+        {
+            Input.location.Start();
+
+        }
         if (Input.location.lastData.latitude != 0 && Input.location.lastData.longitude != 0)
         {
             var latitude = Input.location.lastData.latitude;
