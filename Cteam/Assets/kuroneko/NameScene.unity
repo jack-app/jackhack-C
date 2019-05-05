@@ -986,15 +986,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-<<<<<<< HEAD
-    m_FontSize: 95
-=======
-<<<<<<< HEAD
-    m_FontSize: 80
-=======
     m_FontSize: 90
->>>>>>> 7e5711066cb3e4d6413f136e144d34c291cf228f
->>>>>>> 5c25d32c1fa84919b4cba4a97b751024ef58d3bf
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
