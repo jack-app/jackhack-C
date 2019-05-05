@@ -11,19 +11,25 @@ public class Bomber : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("GPSCheck",1,1);
+       
+        //InvokeRepeating("GPSCheck",1,1);
     }
 
     // Update is called once per frame
     void Update()
     {
-       
+        if (Input.location.status != LocationServiceStatus.Running)
+        {
+            Input.location.Start();
+
+        }
+        GPSCheck();
 
     }
 
     void GPSCheck()
     {
-        Input.location.Start();
+        
         print(Input.location.status);
 
         if (Input.location.status == LocationServiceStatus.Running && Input.location.lastData.latitude != 0 && Input.location.lastData.longitude != 0)

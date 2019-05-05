@@ -6,7 +6,8 @@ using UnityEngine.UI;
 public class MatsudaiFade : MonoBehaviour
 {
     public Text Matsudai;
-    public float FadeAmount = 0.01f;
+    public float FadeAmount = 0.1f;
+    public float A = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -17,12 +18,15 @@ public class MatsudaiFade : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float A = 1f;
-        if(A == 0f) { FadeAmount = FadeAmount * -1;
+        if(A <= 0)
+        {
+            FadeAmount = FadeAmount * -1;
         }
-        if(A== 255f) { FadeAmount = FadeAmount * -1;
+        if(A >= 1)
+        {
+            FadeAmount = FadeAmount * -1;
         }
-        A = A + FadeAmount * Time.deltaTime;
+        A= A+FadeAmount*Time.deltaTime;
         Matsudai.color = new Color(0, 0, 0, A);
     }
 }
