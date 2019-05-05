@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Bomber : MonoBehaviour
 {
@@ -9,9 +10,13 @@ public class Bomber : MonoBehaviour
 
     public int judgedistance;
     // Start is called before the first frame update
+
+    public Slider slider;
+
+
     void Start()
     {
-       
+        slider.value = 0;  
         //InvokeRepeating("GPSCheck",1,1);
     }
 
@@ -30,7 +35,7 @@ public class Bomber : MonoBehaviour
     void GPSCheck()
     {
         
-        print(Input.location.status);
+        //print(Input.location.status);
 
         if (Input.location.status == LocationServiceStatus.Running && Input.location.lastData.latitude != 0 && Input.location.lastData.longitude != 0)
         {
@@ -43,8 +48,12 @@ public class Bomber : MonoBehaviour
             //print(latitudelength + ":" + longitudelength);
 
             var direction = latitudelength * latitudelength + longitudelength*longitudelength;
-            print(direction);
-             print("latitude"+latitude + ":" + "longitude"+longitude+":"+"homelatitude"+homelatitude+":"+"homelongitude"+homelongitude);
+            //print(direction);
+
+            // print("latitude"+latitude + ":" + "longitude"+longitude+":"+"homelatitude"+homelatitude+":"+"homelongitude"+homelongitude);
+
+            slider.value = direction / judgedistance;
+
             if (direction > judgedistance)
             {
                 Data.alarm = false;
