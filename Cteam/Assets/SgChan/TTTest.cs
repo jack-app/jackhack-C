@@ -1,18 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
-
-public class Bomber : MonoBehaviour
+using UnityEngine.UI;
+public class TTTest : MonoBehaviour
 {
-
-
     public int judgedistance;
+    public Text directiontext;
     // Start is called before the first frame update
     void Start()
     {
-       
-        //InvokeRepeating("GPSCheck",1,1);
+        //InvokeRepeating("GPSCheck", 1, 1);
+
     }
 
     // Update is called once per frame
@@ -24,12 +22,11 @@ public class Bomber : MonoBehaviour
 
         }
         GPSCheck();
-
     }
 
     void GPSCheck()
     {
-        
+
         print(Input.location.status);
 
         if (Input.location.status == LocationServiceStatus.Running && Input.location.lastData.latitude != 0 && Input.location.lastData.longitude != 0)
@@ -42,18 +39,12 @@ public class Bomber : MonoBehaviour
             var longitudelength = (longitude - homelongitude) * 10000;
             //print(latitudelength + ":" + longitudelength);
 
-            var direction = latitudelength * latitudelength + longitudelength*longitudelength;
-            print(direction);
-             print("latitude"+latitude + ":" + "longitude"+longitude+":"+"homelatitude"+homelatitude+":"+"homelongitude"+homelongitude);
-            if (direction > judgedistance)
-            {
-                Data.alarm = false;
-                PlayerPrefs.SetInt("Alarm",0);
-                Data.getupdays += 1;
-                PlayerPrefs.SetInt("GetUpDays", Data.getupdays);
-                SceneManager.LoadScene("Succeed");
-            }
+            var direction = latitudelength * latitudelength + longitudelength * longitudelength;
+            //print(direction);
+            //print("latitude" + latitude + ":" + "longitude" + longitude + ":" + "homelatitude" + homelatitude + ":" + "homelongitude" + homelongitude);
+
+            directiontext.text = latitude + ":" + longitude;
+
         }
     }
-
 }
