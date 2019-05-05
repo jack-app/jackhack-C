@@ -14,21 +14,29 @@ public class TatchDog : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.touchCount > 0)
+        if (0 < Input.touchCount)
         {
-            RaycastHit hit;
-            Ray ray = camera.ScreenPointToRay(Input.mousePosition);
-            if (Physics.Raycast(ray, out hit))
+            Touch t = Input.GetTouch(0);
+
+            if (t.phase == TouchPhase.Began)
             {
-                print("hit");
-                if (hit.transform.tag == "Dog")
+                RaycastHit hit;
+                Ray ray = camera.ScreenPointToRay(Input.mousePosition);
+                if (Physics.Raycast(ray, out hit))
                 {
-                    print("Dog");
-                    hit.transform.GetComponent<Dog>().Jump();
+                    print("hit");
+                    if (hit.transform.tag == "Dog")
+                    {
+                        print("Dog");
+                        hit.transform.GetComponent<Dog>().Jump();
+                    }
                 }
+
+
             }
         }
 
+       
        
     }
 }

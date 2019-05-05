@@ -24,7 +24,6 @@ public class TransparentFade : MonoBehaviour
             return;
         }
         float A = LifeTime / FadeTime;
-        var color = SPR.color;
-        color.a = A;
+        this.SPR.color = new Color(1, 1, 1, A);
     }
 }
