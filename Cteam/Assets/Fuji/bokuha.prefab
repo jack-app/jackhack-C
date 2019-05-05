@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 442087078050960208}
   - component: {fileID: 8356351631476651578}
   - component: {fileID: -8687443379325931435}
+  - component: {fileID: 1085978749742216606}
   m_Layer: 0
   m_Name: bokuha
   m_TagString: Untagged
@@ -92,3 +93,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7394aeab01f9473438fa7580c7bbf878, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1085978749742216606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9127767718279244438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fa2eeb7b1c009f439a88b3e963a7ed3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FadeTime: 1
+  LifeTime: 1

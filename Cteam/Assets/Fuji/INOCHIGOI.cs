@@ -19,7 +19,6 @@ public class INOCHIGOI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
- 
         Touch T = Input.GetTouch(0);
         if (T.phase == TouchPhase.Began) {
             int HelpNUM = Random.Range(min, max);

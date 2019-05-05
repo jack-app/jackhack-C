@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4939213986966258918}
   - component: {fileID: 8414689881406869511}
   - component: {fileID: 2069382307494437533}
+  - component: {fileID: 4230640628201131046}
   m_Layer: 0
   m_Name: Tasukete
   m_TagString: Untagged
@@ -92,3 +93,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7394aeab01f9473438fa7580c7bbf878, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &4230640628201131046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8203275386824775677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fa2eeb7b1c009f439a88b3e963a7ed3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FadeTime: 1
+  LifeTime: 1
