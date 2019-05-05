@@ -8,13 +8,14 @@ public class NameScript : MonoBehaviour
 {
     public static string dogname;
     InputField nameField;
+    Animator anim;
     
     // Start is called before the first frame update
     void Start()
     {
         nameField = GameObject.Find("nameField").GetComponent<InputField>();
         nameField.text = Data.dogname;
-        
+        anim = GameObject.Find("DoG").GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -28,7 +29,7 @@ public class NameScript : MonoBehaviour
         dogname = nameField.text;
         Debug.Log(dogname);
         PlayerPrefs.SetString("DogName", dogname);
-        
+        anim.SetTrigger("Jump");
     }
 
     public void OnClick()
