@@ -6,9 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/SgChan/Demo.unity
-    guid: 549ed02140b8afc42938c73fac3b6987
-  - enabled: 1
     path: Assets/kuroneko/MainScene.unity
     guid: 5a43429fbbd170e4989f732d6acec01a
   - enabled: 1
