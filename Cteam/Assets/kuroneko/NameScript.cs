@@ -29,7 +29,7 @@ public class NameScript : MonoBehaviour
         dogname = nameField.text;
         Debug.Log(dogname);
         PlayerPrefs.SetString("DogName", dogname);
-        anim.SetTrigger("Jump");
+        anim.SetTrigger("Roar");
     }
 
     public void OnClick()
