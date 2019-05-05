@@ -140,7 +140,7 @@ PrefabInstance:
     - target: {fileID: 2920781966490499583, guid: 2b44eca503077d0408ed95423f7b72c8,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.98
+      value: -4
       objectReference: {fileID: 0}
     - target: {fileID: 2920781966490499583, guid: 2b44eca503077d0408ed95423f7b72c8,
         type: 3}
@@ -201,6 +201,7 @@ GameObject:
   - component: {fileID: 316435605}
   - component: {fileID: 316435604}
   - component: {fileID: 316435607}
+  - component: {fileID: 316435608}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -266,6 +267,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4a2da4a8eb080c24cb7d742782023abd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &316435608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 316435603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd577c5ed9653a14b8833827ebadcf3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &561456830
