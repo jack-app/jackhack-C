@@ -24,6 +24,6 @@ public class GetOutScript : MonoBehaviour
         {
             minute= ""+ Data.getouttime.Minute;
         }
-        text.text = "外出時刻は " + Data.getouttime.Hour + ":" + minute + " です";
+        text.text = "出発時刻は " + Data.getouttime.Hour + ":" + minute + " です";
     }
 }
