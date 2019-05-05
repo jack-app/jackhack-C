@@ -33,9 +33,9 @@ public class Data : MonoBehaviour
         getouttime = System.DateTime.FromBinary(System.Convert.ToInt64(PlayerPrefs.GetString("GetOutTime", defalt)));
 
         alarm = 1 == PlayerPrefs.GetInt("Alarm");
-        print(alarm);
-        print(getuptime);
-        print(getouttime);
+        //print(getuptime);
+        //print(getouttime);
+        print(homelatitude);
     }
 
     // Update is called once per frame
