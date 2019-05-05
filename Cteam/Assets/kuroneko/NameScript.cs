@@ -33,6 +33,6 @@ public class NameScript : MonoBehaviour
 
     public void OnClick()
     {
-        SceneManager.LoadScene("MainScene");
+        SceneManager.LoadScene("SettingScene");
     }
 }
