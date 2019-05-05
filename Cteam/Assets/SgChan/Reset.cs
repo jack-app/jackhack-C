@@ -19,10 +19,12 @@ public class Reset : MonoBehaviour
 
     public void DataReset()
     {
+
         PlayerPrefs.DeleteKey("GetUpTime");
         PlayerPrefs.DeleteKey("GetOutTime");
         PlayerPrefs.DeleteKey("DogName");
         PlayerPrefs.DeleteKey("GetUpDays");
+        PlayerPrefs.DeleteKey("Alarm");
         SceneManager.LoadScene("MainScene");
 
     }
