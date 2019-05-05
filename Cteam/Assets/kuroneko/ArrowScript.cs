@@ -24,12 +24,12 @@ public class ArrowScript : MonoBehaviour
 
     public void RClick()
     {
-        rot = 1;
+        rot = -1;
     }
 
     public void LClick()
     {
-        rot = -1;
+        rot = 1;
     }
 
     public void RotFinish()
